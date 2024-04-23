@@ -39,19 +39,6 @@ export interface Routes<Get extends Route = Route, Head extends Route = Route, P
   all?: All;
 }
 
-export function route<
-  RawServer extends RawServerBase = RawServerDefault,
-  RawRequest extends RawRequestDefaultExpression<RawServer> = RawRequestDefaultExpression<RawServer>,
-  RawReply extends RawReplyDefaultExpression<RawServer> = RawReplyDefaultExpression<RawServer>,
-  TypeProvider extends FastifyTypeProvider = FastifyTypeProviderDefault,
-  Logger extends FastifyBaseLogger = FastifyBaseLogger,
-  RouteGeneric extends RouteGenericInterface = RouteGenericInterface,
-  ContextConfig = ContextConfigDefault,
-  SchemaCompiler extends FastifySchema = FastifySchema
->(r: Route<RawServer, RawRequest, RawReply, TypeProvider, Logger, RouteGeneric, ContextConfig, SchemaCompiler>): Route<RawServer, RawRequest, RawReply, TypeProvider, Logger, RouteGeneric, ContextConfig, SchemaCompiler> {
-  return r;
-}
-
-export function routes< T extends Routes>(r: T): T {
+export function routes<T extends Routes>(r: T): T {
   return r;
 }
