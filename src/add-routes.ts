@@ -7,9 +7,9 @@ type Methods = "all" | "delete" | "get" | "head" | "options" | "patch" | "post" 
 
 async function loadRoutes(path: string): Promise<Routes> {
   const url = pathToFileURL(path);
-  const fileRoutes = await import (url.toString()) as Routes;
+  const fileRoutes = (await import (url.toString())).default as Routes;
   const routes: Partial<Record<Methods, Route>> = {};
-  const allowed = ["get", "head", "post", "put", "del", "options", "patch", "all"];
+  const allowed = ["get", "head", "post", "put", "delete", "options", "patch", "all"];
   for (const [key, value] of Object.entries(fileRoutes)) {
     if (!allowed.includes(key)) {
       continue;
@@ -18,7 +18,7 @@ async function loadRoutes(path: string): Promise<Routes> {
     if (typeof route.handler !== "function") {
       throw new Error(`${path} contains ${key}.handler that is not a function`);
     }
-    const method = key === "del" ? "delete" : key as Methods;
+    const method = key as Methods;
     routes[method] = value;
   }
   return routes;

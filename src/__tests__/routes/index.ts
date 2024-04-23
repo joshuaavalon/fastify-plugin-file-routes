@@ -1,8 +1,10 @@
-import type { Route } from "../../index.js";
+import { routes } from "../../index.js";
 
-export const get = {
-  opts: {},
-  async handler(req, res) {
-    res.send("hello world");
+export default routes({
+  get: {
+    opts: {},
+    async handler(req, res) {
+      res.send("hello world");
+    }
   }
-} satisfies Route;
+});

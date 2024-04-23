@@ -19,18 +19,18 @@ const app = await fastify();
 await app.register(fileRoutesPlugin, { baseDir: routesDir });
 ```
 
-> Note that you need to use `del` for `delete` because `delete` is reserved keyword.
-
 ```ts
-import type { Route } from "@joshuaavalon/fastify-plugin-file-routes";
+import { routes } from "@joshuaavalon/fastify-plugin-file-routes";
 
-export const get = {
-  opts: {},
-  async handler(req, res) {
-    const { params } = req;
-    res.send(params);
+export default routes({
+  get: {
+    opts: {},
+    async handler(req, res) {
+      const { params } = req;
+      res.send(params);
+    }
   }
-} satisfies Route;
+});
 ```
 
 ```
