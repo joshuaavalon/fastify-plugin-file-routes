@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.1](https://github.com/joshuaavalon/fastify-plugin-file-routes/compare/fastify-plugin-file-routes-v1.1.0...fastify-plugin-file-routes-v1.1.1) (2024-04-23)
+
+
+### Bug Fixes
+
+* remove wrong helper ([ddf8d18](https://github.com/joshuaavalon/fastify-plugin-file-routes/commit/ddf8d187de40ce1468da7d2c3abc7ac16da04f37))
+* TypeScript type infer ([d4154ef](https://github.com/joshuaavalon/fastify-plugin-file-routes/commit/d4154eff1180c42673aef34958d46f8cedd77c8e))
+
 ## [1.1.0](https://github.com/joshuaavalon/fastify-plugin-file-routes/compare/fastify-plugin-file-routes-v1.0.0...fastify-plugin-file-routes-v1.1.0) (2024-04-23)
 
 
