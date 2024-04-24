@@ -3,7 +3,7 @@ import { resolve } from "node:path";
 import fp from "fastify-plugin";
 import { scanDirectories } from "./scan-directories.js";
 
-const name = "#plugins/file-route";
+const name = "@joshuaavalon/fastify-plugin-file-routes";
 
 interface Options {
   baseDir: string;
