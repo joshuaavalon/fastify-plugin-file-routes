@@ -22,6 +22,9 @@ export async function scanDirectories(app: FastifyInstance, opts: Readonly<Optio
 
   if (stat.isDirectory()) {
     for (const entry of await readdir(resolved)) {
+      if (ignore.test(entry)) {
+        continue;
+      }
       await scanDirectories(app, { ...opts, baseDir }, join(curPath, entry));
     }
   } else if (stat.isFile() && match.test(curPath)) {

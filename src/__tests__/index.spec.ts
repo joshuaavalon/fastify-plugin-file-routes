@@ -31,4 +31,9 @@ describe("Test plugin", () => {
     const json = res.json();
     assert.equal(json.id, "1");
   });
+
+  it("should not found", async () => {
+    const res = await app.inject({ path: "/1/__tests__", method: "get" });
+    assert.equal(res.statusCode, 404);
+  });
 });
