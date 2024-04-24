@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.2](https://github.com/joshuaavalon/fastify-plugin-file-routes/compare/fastify-plugin-file-routes-v1.1.1...fastify-plugin-file-routes-v1.1.2) (2024-04-24)
+
+
+### Bug Fixes
+
+* scanning ignored directories ([9a7fb71](https://github.com/joshuaavalon/fastify-plugin-file-routes/commit/9a7fb7128621cf3b477334c05c1779df784bd2d6))
+* update plugin name ([aed229c](https://github.com/joshuaavalon/fastify-plugin-file-routes/commit/aed229caabbed1cb007bd0a4d4862cf2ab2993fb))
+
 ## [1.1.1](https://github.com/joshuaavalon/fastify-plugin-file-routes/compare/fastify-plugin-file-routes-v1.1.0...fastify-plugin-file-routes-v1.1.1) (2024-04-23)
 
 
