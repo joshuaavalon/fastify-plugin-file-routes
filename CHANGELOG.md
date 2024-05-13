@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.3](https://github.com/joshuaavalon/fastify-plugin-file-routes/compare/fastify-plugin-file-routes-v1.1.2...fastify-plugin-file-routes-v1.1.3) (2024-05-13)
+
+
+### Bug Fixes
+
+* infer types from options ([cc5e016](https://github.com/joshuaavalon/fastify-plugin-file-routes/commit/cc5e016c1634159a4192de28ecfea298db1379cb))
+
 ## [1.1.2](https://github.com/joshuaavalon/fastify-plugin-file-routes/compare/fastify-plugin-file-routes-v1.1.1...fastify-plugin-file-routes-v1.1.2) (2024-04-24)
 
 
